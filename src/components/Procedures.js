@@ -1,9 +1,13 @@
 
-function Procedures() {
+function Procedures(props) {
+    const proceduresItems = props.proceduresList.map((p) => {
+        return <li>{p}</li>
+    })
     return(
-        <div>
-            This is the Procedures Page
-        </div>
+        <>
+            <h1>Procedures</h1>
+            <ul>{proceduresItems}</ul>
+        </>
     )
 }
 
